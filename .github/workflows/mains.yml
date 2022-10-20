@@ -1,0 +1,25 @@
+#-----------------------------------------
+#GitHabActions-Basic
+#
+#-----------------------------------------
+name: My-GitHabFctions-Bacis
+
+on: 
+  push:
+    branches: 
+      - master
+
+jobs:
+  my_testing:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Hello massage
+      run :  echo "Hello world from Testing job"
+
+        
+  my_deploy: 
+    runs-on: ubuntu-latest 
+    steps: 
+    - name: Hello massage
+      run :  echo "Hello World form Deploy job"
